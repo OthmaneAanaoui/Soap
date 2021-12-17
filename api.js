@@ -5,10 +5,10 @@ const query = (Temp, elementToParse) => {
   xml = `<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns=\"https://www.w3schools.com/xml/\">
   <soapenv:Header/>
    <soapenv:Body>
-      <ns:FahrenheitToCelsius>
-         <!--Optional:-->
-         <ns:Fahrenheit>${Temp}</ns:Fahrenheit>
-      </ns:FahrenheitToCelsius>
+      <ns:Message>
+         
+         <ns:Text>${Temp}</ns:Text>
+      </ns:Message>
    </soapenv:Body>
 </soapenv:Envelope>`;
 
